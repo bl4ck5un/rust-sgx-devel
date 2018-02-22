@@ -2,7 +2,7 @@ FROM baiduxlab/sgx-rust
 
 ENV PATH=$PATH:/root/.cargo/bin
 
-RUN cargo install make && rustup component add rustfmt-preview
+RUN cargo install cargo-make && rustup component add rustfmt-preview
 
 RUN apt-get update -qq && apt-get install -qq -y lsb-release
 
